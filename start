@@ -1,0 +1,7 @@
+Step 1: Open Terminal and Create Your Project FolderOpen your computer's terminal (macOS/Linux) or Command Prompt (Windows) and create a dedicated space for this project.Windows / macOS / Linux:bashmkdir "E:\Gemini_TTS_Project"
+cd "E:\Gemini_TTS_Project"
+Use code with caution.Step 2: Initialize and Activate Your Virtual EnvironmentThis step creates an isolated container so your dependencies do not conflict with your main system.Create the environment:Windows: python -m venv venvmacOS / Linux: python3 -m venv venvActivate the environment:Windows (Command Prompt):cmdvenv\Scripts\activate.bat
+Use code with caution.Windows (PowerShell):powershell.\venv\Scripts\Activate.ps1
+Use code with caution.macOS / Linux:bashsource venv/bin/activate
+Use code with caution.Visual Anchor: Your terminal line prompt will now display (venv) at the beginning.Step 3: Install the Required LibraryWith the virtual environment fully active, run the Python installation command to download the updated Google GenAI SDK [1]:bashpip install google-genai
+Use code with caution.Step 4: Create and Paste the Python ScriptOpen a plain text editor (like Notepad, VS Code, or TextEdit).Create a new file and name it exactly run_tts.py.Paste the following automated script. This configuration separates your structural instructions from your raw reading text using a standard list array:python
