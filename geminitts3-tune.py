@@ -9,7 +9,7 @@ def save_wav_file(filename, pcm_data, channels=1, rate=24000, sample_width=2):
         wf.setframerate(rate)
         wf.writeframes(pcm_data)
 
-API_KEY = "AIzaSyAfme6yTt-axuhrRLsxFEpePnPMJ7DA8-k"
+API_KEY = ""
 client = genai.Client(api_key=API_KEY, http_options={'api_version': 'v1alpha'})
 
 # CHANGES MADE: Removed "whispered", "murmured", and "breath catching" 
